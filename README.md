@@ -280,8 +280,6 @@ Target    50 / 50  ████████████████████ 
 
 ### ⭐ SQL Interview Preparation — One Query at a Time
 
-**50 Problems · 7 Topics · 1 Goal**
-
-`SELECT` → `JOIN` → `GROUP BY` → `SUBQUERY` → **Interview Ready 🚀**
+**Interview Ready 🚀**
 
 </div>
