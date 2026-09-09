@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**11 / 50 Problems Completed — 22%**
+**12 / 50 Problems Completed — 24%**
 
-```text
-████░░░░░░░░░░░░░░░░ 22%
+```text id="3ahmfs"
+█████░░░░░░░░░░░░░░░ 24%
 ```
 
 **Status:** 🚧 In Progress
@@ -39,7 +39,7 @@ I'm using this challenge to become faster and more confident at:
 
 The SQL 50 study plan progresses through:
 
-```text
+```text id="ez6d4u"
 SELECT
    ↓
 Basic Joins
@@ -82,17 +82,17 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 2️⃣ Basic Joins
 
-|  # | Problem                                                | Difficulty | Status | Review | Pattern                   |
-| -: | ------------------------------------------------------ | :--------: | :----: | :----: | ------------------------- |
-| 06 | Replace Employee ID With The Unique Identifier         |    Easy    |    ✅   |    —   | `LEFT JOIN`               |
-| 07 | Product Sales Analysis I                               |    Easy    |    ✅   |    —   | `INNER JOIN`              |
-| 08 | Customer Who Visited but Did Not Make Any Transactions |    Easy    |    ✅   |    —   | Anti-Join · `LEFT JOIN`   |
-| 09 | Rising Temperature                                     |    Easy    |    ✅   |   🔁   | `LAG()` · Date Comparison |
-| 10 | Average Time of Process per Machine                    |    Easy    |    ✅   |    —   | Self Join · Aggregation   |
-| 11 | Employee Bonus                                         |    Easy    |    ✅   |    —   | `LEFT JOIN` · Filtering   |
-| 12 | Students and Examinations                              |    Easy    |    ⬜   |    —   | —                         |
-| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ⬜   |    —   | —                         |
-| 14 | Confirmation Rate                                      |   Medium   |    ⬜   |    —   | —                         |
+|  # | Problem                                                | Difficulty | Status | Review | Pattern                                |
+| -: | ------------------------------------------------------ | :--------: | :----: | :----: | -------------------------------------- |
+| 06 | Replace Employee ID With The Unique Identifier         |    Easy    |    ✅   |    —   | `LEFT JOIN`                            |
+| 07 | Product Sales Analysis I                               |    Easy    |    ✅   |    —   | `INNER JOIN`                           |
+| 08 | Customer Who Visited but Did Not Make Any Transactions |    Easy    |    ✅   |    —   | Anti-Join · `LEFT JOIN`                |
+| 09 | Rising Temperature                                     |    Easy    |    ✅   |   🔁   | `LAG()` · Date Comparison              |
+| 10 | Average Time of Process per Machine                    |    Easy    |    ✅   |   🔁   | Self Join · `AVG()` · Aggregation      |
+| 11 | Employee Bonus                                         |    Easy    |    ✅   |    —   | `LEFT JOIN` · `NULL` Handling          |
+| 12 | Students and Examinations                              |    Easy    |    ✅   |   🔁   | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
+| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ⬜   |    —   | —                                      |
+| 14 | Confirmation Rate                                      |   Medium   |    ⬜   |    —   | —                                      |
 
 ### 3️⃣ Basic Aggregate Functions
 
@@ -161,7 +161,7 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 Each problem is stored as an individual SQL solution and organized by topic.
 
-```text
+```text id="v23zzr"
 leetcode-sql-50/
 │
 ├── README.md
@@ -178,6 +178,9 @@ leetcode-sql-50/
 │   ├── 07-product-sales-analysis-i.sql
 │   ├── 08-customer-who-visited-but-did-not-make-any-transactions.sql
 │   ├── 09-rising-temperature.sql
+│   ├── 10-average-time-of-process-per-machine.sql
+│   ├── 11-employee-bonus.sql
+│   ├── 12-students-and-examinations.sql
 │   └── ...
 │
 ├── 03-basic-aggregate-functions/
@@ -197,7 +200,7 @@ I aim to keep every solution:
 
 Example:
 
-```sql
+```sql id="1z75ne"
 -- 01. Recyclable and Low Fat Products
 
 SELECT product_id
@@ -231,7 +234,7 @@ For each problem, I work through the following process:
 
 Each problem gets its own commit so the Git history also serves as a record of my progress.
 
-```text
+```text id="i2zrfp"
 leetcode: solve 01 Recyclable and Low Fat Products
 leetcode: solve 02 Find Customer Referee
 leetcode: solve 03 Big Countries
@@ -239,14 +242,14 @@ leetcode: solve 03 Big Countries
 
 When revisiting an existing solution:
 
-```text
-refactor: simplify 12 Students and Examinations
-refactor: add self-join approach for 09 Rising Temperature
+```text id="e5o4w7"
+refactor: revisit 09 Rising Temperature
+refactor: add alternative approach for 12 Students and Examinations
 ```
 
 For documentation changes:
 
-```text
+```text id="dygv48"
 docs: add SQL 50 roadmap
 docs: update challenge progress
 docs: update review tracker
@@ -256,15 +259,15 @@ docs: update review tracker
 
 ## 🏁 Challenge Progress
 
-```text
-[████░░░░░░░░░░░░░░░░] 11 / 50
+```text id="29j8fg"
+[█████░░░░░░░░░░░░░░░] 12 / 50
 ```
 
 |                        | Problems |
 | ---------------------- | -------: |
-| ✅ Completed            |   **11** |
-| ⏳ Remaining            |   **39** |
-| 🔁 Selected for Review |    **1** |
+| ✅ Completed            |   **12** |
+| ⏳ Remaining            |   **38** |
+| 🔁 Selected for Review |    **3** |
 | 🎯 Target              |   **50** |
 
 ---
@@ -285,12 +288,12 @@ The goal is to reach the point where the process becomes natural:
 
 ## 🚀 Final Goal
 
-```text
-Current   11 / 50  ████░░░░░░░░░░░░░░░░  22%
+```text id="e1f7eu"
+Current   12 / 50  █████░░░░░░░░░░░░░░░  24%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**11 down. 39 to go.**
+**12 down. 38 to go.**
 
 ---
 
