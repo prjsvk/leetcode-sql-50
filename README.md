@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**12 / 50 Problems Completed — 24%**
+**13 / 50 Problems Completed — 26%**
 
-```text id="3ahmfs"
-█████░░░░░░░░░░░░░░░ 24%
+```text
+█████░░░░░░░░░░░░░░░ 26%
 ```
 
 **Status:** 🚧 In Progress
@@ -39,7 +39,7 @@ I'm using this challenge to become faster and more confident at:
 
 The SQL 50 study plan progresses through:
 
-```text id="ez6d4u"
+```text
 SELECT
    ↓
 Basic Joins
@@ -91,7 +91,7 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 | 10 | Average Time of Process per Machine                    |    Easy    |    ✅   |   🔁   | Self Join · `AVG()` · Aggregation      |
 | 11 | Employee Bonus                                         |    Easy    |    ✅   |    —   | `LEFT JOIN` · `NULL` Handling          |
 | 12 | Students and Examinations                              |    Easy    |    ✅   |   🔁   | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
-| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ⬜   |    —   | —                                      |
+| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ✅   |   🔁   | `GROUP BY` · `HAVING` · Subquery       |
 | 14 | Confirmation Rate                                      |   Medium   |    ⬜   |    —   | —                                      |
 
 ### 3️⃣ Basic Aggregate Functions
@@ -161,7 +161,7 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 Each problem is stored as an individual SQL solution and organized by topic.
 
-```text id="v23zzr"
+```text
 leetcode-sql-50/
 │
 ├── README.md
@@ -181,6 +181,7 @@ leetcode-sql-50/
 │   ├── 10-average-time-of-process-per-machine.sql
 │   ├── 11-employee-bonus.sql
 │   ├── 12-students-and-examinations.sql
+│   ├── 13-managers-with-at-least-5-direct-reports.sql
 │   └── ...
 │
 ├── 03-basic-aggregate-functions/
@@ -200,8 +201,17 @@ I aim to keep every solution:
 
 Example:
 
-```sql id="1z75ne"
--- 01. Recyclable and Low Fat Products
+```sql
+/*
+ * LeetCode SQL 50
+ * 01. Recyclable and Low Fat Products
+ *
+ * Difficulty: Easy
+ * Topic: Select
+ *
+ * Goal:
+ * Return product IDs that are both low fat and recyclable.
+ */
 
 SELECT product_id
 FROM Products
@@ -234,7 +244,7 @@ For each problem, I work through the following process:
 
 Each problem gets its own commit so the Git history also serves as a record of my progress.
 
-```text id="i2zrfp"
+```text
 leetcode: solve 01 Recyclable and Low Fat Products
 leetcode: solve 02 Find Customer Referee
 leetcode: solve 03 Big Countries
@@ -242,14 +252,14 @@ leetcode: solve 03 Big Countries
 
 When revisiting an existing solution:
 
-```text id="e5o4w7"
+```text
 refactor: revisit 09 Rising Temperature
 refactor: add alternative approach for 12 Students and Examinations
 ```
 
 For documentation changes:
 
-```text id="dygv48"
+```text
 docs: add SQL 50 roadmap
 docs: update challenge progress
 docs: update review tracker
@@ -259,16 +269,25 @@ docs: update review tracker
 
 ## 🏁 Challenge Progress
 
-```text id="29j8fg"
-[█████░░░░░░░░░░░░░░░] 12 / 50
+```text
+[█████░░░░░░░░░░░░░░░] 13 / 50
 ```
 
 |                        | Problems |
 | ---------------------- | -------: |
-| ✅ Completed            |   **12** |
-| ⏳ Remaining            |   **38** |
-| 🔁 Selected for Review |    **3** |
+| ✅ Completed            |   **13** |
+| ⏳ Remaining            |   **37** |
+| 🔁 Selected for Review |    **4** |
 | 🎯 Target              |   **50** |
+
+### 🔁 Current Review Queue
+
+|  # | Problem                                 | Pattern to Reinforce                   |
+| -: | --------------------------------------- | -------------------------------------- |
+| 09 | Rising Temperature                      | `LAG()` · Date Comparison              |
+| 10 | Average Time of Process per Machine     | Self Join · `AVG()` · Aggregation      |
+| 12 | Students and Examinations               | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
+| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery       |
 
 ---
 
@@ -288,12 +307,12 @@ The goal is to reach the point where the process becomes natural:
 
 ## 🚀 Final Goal
 
-```text id="e1f7eu"
-Current   12 / 50  █████░░░░░░░░░░░░░░░  24%
+```text
+Current   13 / 50  █████░░░░░░░░░░░░░░░  26%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**12 down. 38 to go.**
+**13 down. 37 to go.**
 
 ---
 
