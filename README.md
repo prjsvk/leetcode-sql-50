@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**13 / 50 Problems Completed — 26%**
+**14 / 50 Problems Completed — 28%**
 
 ```text
-█████░░░░░░░░░░░░░░░ 26%
+██████░░░░░░░░░░░░░░ 28%
 ```
 
 **Status:** 🚧 In Progress
@@ -82,17 +82,21 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 2️⃣ Basic Joins
 
-|  # | Problem                                                | Difficulty | Status | Review | Pattern                                |
-| -: | ------------------------------------------------------ | :--------: | :----: | :----: | -------------------------------------- |
-| 06 | Replace Employee ID With The Unique Identifier         |    Easy    |    ✅   |    —   | `LEFT JOIN`                            |
-| 07 | Product Sales Analysis I                               |    Easy    |    ✅   |    —   | `INNER JOIN`                           |
-| 08 | Customer Who Visited but Did Not Make Any Transactions |    Easy    |    ✅   |    —   | Anti-Join · `LEFT JOIN`                |
-| 09 | Rising Temperature                                     |    Easy    |    ✅   |   🔁   | `LAG()` · Date Comparison              |
-| 10 | Average Time of Process per Machine                    |    Easy    |    ✅   |   🔁   | Self Join · `AVG()` · Aggregation      |
-| 11 | Employee Bonus                                         |    Easy    |    ✅   |    —   | `LEFT JOIN` · `NULL` Handling          |
-| 12 | Students and Examinations                              |    Easy    |    ✅   |   🔁   | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
-| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ✅   |   🔁   | `GROUP BY` · `HAVING` · Subquery       |
-| 14 | Confirmation Rate                                      |   Medium   |    ⬜   |    —   | —                                      |
+|  # | Problem                                                | Difficulty | Status | Review | Pattern                                    |
+| -: | ------------------------------------------------------ | :--------: | :----: | :----: | ------------------------------------------ |
+| 06 | Replace Employee ID With The Unique Identifier         |    Easy    |    ✅   |    —   | `LEFT JOIN`                                |
+| 07 | Product Sales Analysis I                               |    Easy    |    ✅   |    —   | `INNER JOIN`                               |
+| 08 | Customer Who Visited but Did Not Make Any Transactions |    Easy    |    ✅   |    —   | Anti-Join · `LEFT JOIN`                    |
+| 09 | Rising Temperature                                     |    Easy    |    ✅   |   🔁   | `LAG()` · Date Comparison                  |
+| 10 | Average Time of Process per Machine                    |    Easy    |    ✅   |   🔁   | Self Join · `AVG()` · Aggregation          |
+| 11 | Employee Bonus                                         |    Easy    |    ✅   |    —   | `LEFT JOIN` · `NULL` Handling              |
+| 12 | Students and Examinations                              |    Easy    |    ✅   |   🔁   | `CROSS JOIN` · `LEFT JOIN` · `COUNT()`     |
+| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ✅   |   🔁   | `GROUP BY` · `HAVING` · Subquery           |
+| 14 | Confirmation Rate                                      |   Medium   |    ✅   |   🔁   | Conditional Aggregation · `AVG()` · `CASE` |
+
+**Basic Joins: 9 / 9 Complete ✅**
+
+---
 
 ### 3️⃣ Basic Aggregate Functions
 
@@ -182,7 +186,7 @@ leetcode-sql-50/
 │   ├── 11-employee-bonus.sql
 │   ├── 12-students-and-examinations.sql
 │   ├── 13-managers-with-at-least-5-direct-reports.sql
-│   └── ...
+│   └── 14-confirmation-rate.sql
 │
 ├── 03-basic-aggregate-functions/
 ├── 04-sorting-and-grouping/
@@ -270,24 +274,25 @@ docs: update review tracker
 ## 🏁 Challenge Progress
 
 ```text
-[█████░░░░░░░░░░░░░░░] 13 / 50
+[██████░░░░░░░░░░░░░░] 14 / 50
 ```
 
 |                        | Problems |
 | ---------------------- | -------: |
-| ✅ Completed            |   **13** |
-| ⏳ Remaining            |   **37** |
-| 🔁 Selected for Review |    **4** |
+| ✅ Completed            |   **14** |
+| ⏳ Remaining            |   **36** |
+| 🔁 Selected for Review |    **5** |
 | 🎯 Target              |   **50** |
 
 ### 🔁 Current Review Queue
 
-|  # | Problem                                 | Pattern to Reinforce                   |
-| -: | --------------------------------------- | -------------------------------------- |
-| 09 | Rising Temperature                      | `LAG()` · Date Comparison              |
-| 10 | Average Time of Process per Machine     | Self Join · `AVG()` · Aggregation      |
-| 12 | Students and Examinations               | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
-| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery       |
+|  # | Problem                                 | Pattern to Reinforce                       |
+| -: | --------------------------------------- | ------------------------------------------ |
+| 09 | Rising Temperature                      | `LAG()` · Date Comparison                  |
+| 10 | Average Time of Process per Machine     | Self Join · `AVG()` · Aggregation          |
+| 12 | Students and Examinations               | `CROSS JOIN` · `LEFT JOIN` · `COUNT()`     |
+| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery           |
+| 14 | Confirmation Rate                       | Conditional Aggregation · `AVG()` · `CASE` |
 
 ---
 
@@ -308,11 +313,11 @@ The goal is to reach the point where the process becomes natural:
 ## 🚀 Final Goal
 
 ```text
-Current   13 / 50  █████░░░░░░░░░░░░░░░  26%
+Current   14 / 50  ██████░░░░░░░░░░░░░░  28%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**13 down. 37 to go.**
+**14 down. 36 to go.**
 
 ---
 
