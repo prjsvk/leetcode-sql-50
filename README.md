@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**14 / 50 Problems Completed — 28%**
+**15 / 50 Problems Completed — 30%**
 
 ```text
-██████░░░░░░░░░░░░░░ 28%
+██████░░░░░░░░░░░░░░ 30%
 ```
 
 **Status:** 🚧 In Progress
@@ -80,6 +80,10 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 | 04 | Article Views I                 |    Easy    |    ✅   |    —   | `DISTINCT` · Self Comparison |
 | 05 | Invalid Tweets                  |    Easy    |    ✅   |    —   | String Length · Filtering    |
 
+**Select: 5 / 5 Complete ✅**
+
+---
+
 ### 2️⃣ Basic Joins
 
 |  # | Problem                                                | Difficulty | Status | Review | Pattern                                    |
@@ -100,16 +104,20 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 3️⃣ Basic Aggregate Functions
 
-|  # | Problem                                | Difficulty | Status | Review | Pattern |
-| -: | -------------------------------------- | :--------: | :----: | :----: | ------- |
-| 15 | Not Boring Movies                      |    Easy    |    ⬜   |    —   | —       |
-| 16 | Average Selling Price                  |    Easy    |    ⬜   |    —   | —       |
-| 17 | Project Employees I                    |    Easy    |    ⬜   |    —   | —       |
-| 18 | Percentage of Users Attended a Contest |    Easy    |    ⬜   |    —   | —       |
-| 19 | Queries Quality and Percentage         |    Easy    |    ⬜   |    —   | —       |
-| 20 | Monthly Transactions I                 |   Medium   |    ⬜   |    —   | —       |
-| 21 | Immediate Food Delivery II             |   Medium   |    ⬜   |    —   | —       |
-| 22 | Game Play Analysis IV                  |   Medium   |    ⬜   |    —   | —       |
+|  # | Problem                                | Difficulty | Status | Review | Pattern                         |
+| -: | -------------------------------------- | :--------: | :----: | :----: | ------------------------------- |
+| 15 | Not Boring Movies                      |    Easy    |    ✅   |    —   | Filtering · Modulo · `ORDER BY` |
+| 16 | Average Selling Price                  |    Easy    |    ⬜   |    —   | —                               |
+| 17 | Project Employees I                    |    Easy    |    ⬜   |    —   | —                               |
+| 18 | Percentage of Users Attended a Contest |    Easy    |    ⬜   |    —   | —                               |
+| 19 | Queries Quality and Percentage         |    Easy    |    ⬜   |    —   | —                               |
+| 20 | Monthly Transactions I                 |   Medium   |    ⬜   |    —   | —                               |
+| 21 | Immediate Food Delivery II             |   Medium   |    ⬜   |    —   | —                               |
+| 22 | Game Play Analysis IV                  |   Medium   |    ⬜   |    —   | —                               |
+
+**Basic Aggregate Functions: 1 / 8**
+
+---
 
 ### 4️⃣ Sorting and Grouping
 
@@ -123,6 +131,8 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 | 28 | Biggest Single Number                            |    Easy    |    ⬜   |    —   | —       |
 | 29 | Customers Who Bought All Products                |   Medium   |    ⬜   |    —   | —       |
 
+---
+
 ### 5️⃣ Advanced Select and Joins
 
 |  # | Problem                                               | Difficulty | Status | Review | Pattern |
@@ -135,6 +145,8 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 | 35 | Last Person to Fit in the Bus                         |   Medium   |    ⬜   |    —   | —       |
 | 36 | Count Salary Categories                               |   Medium   |    ⬜   |    —   | —       |
 
+---
+
 ### 6️⃣ Subqueries
 
 |  # | Problem                                      | Difficulty | Status | Review | Pattern |
@@ -146,6 +158,8 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 | 41 | Friend Requests II: Who Has the Most Friends |   Medium   |    ⬜   |    —   | —       |
 | 42 | Investments in 2016                          |   Medium   |    ⬜   |    —   | —       |
 | 43 | Department Top Three Salaries                |    Hard    |    ⬜   |    —   | —       |
+
+---
 
 ### 7️⃣ Advanced String Functions / Regex / Clause
 
@@ -189,6 +203,9 @@ leetcode-sql-50/
 │   └── 14-confirmation-rate.sql
 │
 ├── 03-basic-aggregate-functions/
+│   ├── 15-not-boring-movies.sql
+│   └── ...
+│
 ├── 04-sorting-and-grouping/
 ├── 05-advanced-select-and-joins/
 ├── 06-subqueries/
@@ -274,13 +291,13 @@ docs: update review tracker
 ## 🏁 Challenge Progress
 
 ```text
-[██████░░░░░░░░░░░░░░] 14 / 50
+[██████░░░░░░░░░░░░░░] 15 / 50
 ```
 
 |                        | Problems |
 | ---------------------- | -------: |
-| ✅ Completed            |   **14** |
-| ⏳ Remaining            |   **36** |
+| ✅ Completed            |   **15** |
+| ⏳ Remaining            |   **35** |
 | 🔁 Selected for Review |    **5** |
 | 🎯 Target              |   **50** |
 
@@ -313,11 +330,11 @@ The goal is to reach the point where the process becomes natural:
 ## 🚀 Final Goal
 
 ```text
-Current   14 / 50  ██████░░░░░░░░░░░░░░  28%
+Current   15 / 50  ██████░░░░░░░░░░░░░░  30%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**14 down. 36 to go.**
+**15 down. 35 to go.**
 
 ---
 
