@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**15 / 50 Problems Completed — 30%**
+**16 / 50 Problems Completed — 32%**
 
 ```text
-██████░░░░░░░░░░░░░░ 30%
+██████░░░░░░░░░░░░░░ 32%
 ```
 
 **Status:** 🚧 In Progress
@@ -104,18 +104,18 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 3️⃣ Basic Aggregate Functions
 
-|  # | Problem                                | Difficulty | Status | Review | Pattern                         |
-| -: | -------------------------------------- | :--------: | :----: | :----: | ------------------------------- |
-| 15 | Not Boring Movies                      |    Easy    |    ✅   |    —   | Filtering · Modulo · `ORDER BY` |
-| 16 | Average Selling Price                  |    Easy    |    ⬜   |    —   | —                               |
-| 17 | Project Employees I                    |    Easy    |    ⬜   |    —   | —                               |
-| 18 | Percentage of Users Attended a Contest |    Easy    |    ⬜   |    —   | —                               |
-| 19 | Queries Quality and Percentage         |    Easy    |    ⬜   |    —   | —                               |
-| 20 | Monthly Transactions I                 |   Medium   |    ⬜   |    —   | —                               |
-| 21 | Immediate Food Delivery II             |   Medium   |    ⬜   |    —   | —                               |
-| 22 | Game Play Analysis IV                  |   Medium   |    ⬜   |    —   | —                               |
+|  # | Problem                                | Difficulty | Status | Review | Pattern                                          |
+| -: | -------------------------------------- | :--------: | :----: | :----: | ------------------------------------------------ |
+| 15 | Not Boring Movies                      |    Easy    |    ✅   |    —   | Filtering · Modulo · `ORDER BY`                  |
+| 16 | Average Selling Price                  |    Easy    |    ✅   |   🔁   | Weighted Average · Date-Range Join · Aggregation |
+| 17 | Project Employees I                    |    Easy    |    ⬜   |    —   | —                                                |
+| 18 | Percentage of Users Attended a Contest |    Easy    |    ⬜   |    —   | —                                                |
+| 19 | Queries Quality and Percentage         |    Easy    |    ⬜   |    —   | —                                                |
+| 20 | Monthly Transactions I                 |   Medium   |    ⬜   |    —   | —                                                |
+| 21 | Immediate Food Delivery II             |   Medium   |    ⬜   |    —   | —                                                |
+| 22 | Game Play Analysis IV                  |   Medium   |    ⬜   |    —   | —                                                |
 
-**Basic Aggregate Functions: 1 / 8**
+**Basic Aggregate Functions: 2 / 8**
 
 ---
 
@@ -204,6 +204,7 @@ leetcode-sql-50/
 │
 ├── 03-basic-aggregate-functions/
 │   ├── 15-not-boring-movies.sql
+│   ├── 16-average-selling-price.sql
 │   └── ...
 │
 ├── 04-sorting-and-grouping/
@@ -291,25 +292,26 @@ docs: update review tracker
 ## 🏁 Challenge Progress
 
 ```text
-[██████░░░░░░░░░░░░░░] 15 / 50
+[██████░░░░░░░░░░░░░░] 16 / 50
 ```
 
 |                        | Problems |
 | ---------------------- | -------: |
-| ✅ Completed            |   **15** |
-| ⏳ Remaining            |   **35** |
-| 🔁 Selected for Review |    **5** |
+| ✅ Completed            |   **16** |
+| ⏳ Remaining            |   **34** |
+| 🔁 Selected for Review |    **6** |
 | 🎯 Target              |   **50** |
 
 ### 🔁 Current Review Queue
 
-|  # | Problem                                 | Pattern to Reinforce                       |
-| -: | --------------------------------------- | ------------------------------------------ |
-| 09 | Rising Temperature                      | `LAG()` · Date Comparison                  |
-| 10 | Average Time of Process per Machine     | Self Join · `AVG()` · Aggregation          |
-| 12 | Students and Examinations               | `CROSS JOIN` · `LEFT JOIN` · `COUNT()`     |
-| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery           |
-| 14 | Confirmation Rate                       | Conditional Aggregation · `AVG()` · `CASE` |
+|  # | Problem                                 | Pattern to Reinforce                             |
+| -: | --------------------------------------- | ------------------------------------------------ |
+| 09 | Rising Temperature                      | `LAG()` · Date Comparison                        |
+| 10 | Average Time of Process per Machine     | Self Join · `AVG()` · Aggregation                |
+| 12 | Students and Examinations               | `CROSS JOIN` · `LEFT JOIN` · `COUNT()`           |
+| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery                 |
+| 14 | Confirmation Rate                       | Conditional Aggregation · `AVG()` · `CASE`       |
+| 16 | Average Selling Price                   | Weighted Average · Date-Range Join · Aggregation |
 
 ---
 
@@ -330,11 +332,11 @@ The goal is to reach the point where the process becomes natural:
 ## 🚀 Final Goal
 
 ```text
-Current   15 / 50  ██████░░░░░░░░░░░░░░  30%
+Current   16 / 50  ██████░░░░░░░░░░░░░░  32%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**15 down. 35 to go.**
+**16 down. 34 to go.**
 
 ---
 
