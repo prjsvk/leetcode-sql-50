@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**16 / 50 Problems Completed — 32%**
+**18 / 50 Problems Completed — 36%**
 
 ```text
-██████░░░░░░░░░░░░░░ 32%
+███████░░░░░░░░░░░░░ 36%
 ```
 
 **Status:** 🚧 In Progress
@@ -108,14 +108,14 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 | -: | -------------------------------------- | :--------: | :----: | :----: | ------------------------------------------------ |
 | 15 | Not Boring Movies                      |    Easy    |    ✅   |    —   | Filtering · Modulo · `ORDER BY`                  |
 | 16 | Average Selling Price                  |    Easy    |    ✅   |   🔁   | Weighted Average · Date-Range Join · Aggregation |
-| 17 | Project Employees I                    |    Easy    |    ⬜   |    —   | —                                                |
-| 18 | Percentage of Users Attended a Contest |    Easy    |    ⬜   |    —   | —                                                |
+| 17 | Project Employees I                    |    Easy    |    ✅   |    —   | `AVG()` · `GROUP BY`                             |
+| 18 | Percentage of Users Attended a Contest |    Easy    |    ✅   |   🔁   | Percentage · Aggregation · Scalar Subquery       |
 | 19 | Queries Quality and Percentage         |    Easy    |    ⬜   |    —   | —                                                |
 | 20 | Monthly Transactions I                 |   Medium   |    ⬜   |    —   | —                                                |
 | 21 | Immediate Food Delivery II             |   Medium   |    ⬜   |    —   | —                                                |
 | 22 | Game Play Analysis IV                  |   Medium   |    ⬜   |    —   | —                                                |
 
-**Basic Aggregate Functions: 2 / 8**
+**Basic Aggregate Functions: 4 / 8**
 
 ---
 
@@ -205,6 +205,8 @@ leetcode-sql-50/
 ├── 03-basic-aggregate-functions/
 │   ├── 15-not-boring-movies.sql
 │   ├── 16-average-selling-price.sql
+│   ├── 17-project-employees-i.sql
+│   ├── 18-percentage-of-users-attended-a-contest.sql
 │   └── ...
 │
 ├── 04-sorting-and-grouping/
@@ -292,14 +294,14 @@ docs: update review tracker
 ## 🏁 Challenge Progress
 
 ```text
-[██████░░░░░░░░░░░░░░] 16 / 50
+[███████░░░░░░░░░░░░░] 18 / 50
 ```
 
 |                        | Problems |
 | ---------------------- | -------: |
-| ✅ Completed            |   **16** |
-| ⏳ Remaining            |   **34** |
-| 🔁 Selected for Review |    **6** |
+| ✅ Completed            |   **18** |
+| ⏳ Remaining            |   **32** |
+| 🔁 Selected for Review |    **7** |
 | 🎯 Target              |   **50** |
 
 ### 🔁 Current Review Queue
@@ -312,6 +314,7 @@ docs: update review tracker
 | 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery                 |
 | 14 | Confirmation Rate                       | Conditional Aggregation · `AVG()` · `CASE`       |
 | 16 | Average Selling Price                   | Weighted Average · Date-Range Join · Aggregation |
+| 18 | Percentage of Users Attended a Contest  | Percentage · Aggregation · Scalar Subquery       |
 
 ---
 
@@ -332,11 +335,11 @@ The goal is to reach the point where the process becomes natural:
 ## 🚀 Final Goal
 
 ```text
-Current   16 / 50  ██████░░░░░░░░░░░░░░  32%
+Current   18 / 50  ███████░░░░░░░░░░░░░  36%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**16 down. 34 to go.**
+**18 down. 32 to go.**
 
 ---
 
