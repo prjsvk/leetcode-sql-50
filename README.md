@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**18 / 50 Problems Completed — 36%**
+**19 / 50 Problems Completed — 38%**
 
 ```text
-███████░░░░░░░░░░░░░ 36%
+████████░░░░░░░░░░░░ 38%
 ```
 
 **Status:** 🚧 In Progress
@@ -24,14 +24,14 @@ The goal isn't simply to finish 50 problems.
 
 I'm using this challenge to become faster and more confident at:
 
-* Translating business questions into SQL
-* Choosing the right joins and aggregations
-* Working with grouped and relational data
-* Recognizing common SQL interview patterns
-* Handling edge cases and `NULL` values
-* Writing readable and maintainable queries
-* Explaining SQL solutions clearly in an interview
-* Revisiting important patterns through spaced repetition
+- Translating business questions into SQL
+- Choosing the right joins and aggregations
+- Working with grouped and relational data
+- Recognizing common SQL interview patterns
+- Handling edge cases and `NULL` values
+- Writing readable and maintainable queries
+- Explaining SQL solutions clearly in an interview
+- Revisiting important patterns through spaced repetition
 
 ---
 
@@ -61,10 +61,10 @@ Advanced String Functions / Regex / Clause
 
 Selected problems are marked for periodic review to reinforce important SQL patterns and alternative approaches.
 
-| Marker | Meaning             |
-| :----: | ------------------- |
-|   🔁   | Selected for review |
-|    —   | —                   |
+| Marker | Meaning |
+| :---: | --- |
+| 🔁 | Selected for review |
+| — | — |
 
 ---
 
@@ -72,13 +72,13 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 1️⃣ Select
 
-|  # | Problem                         | Difficulty | Status | Review | Pattern                      |
-| -: | ------------------------------- | :--------: | :----: | :----: | ---------------------------- |
-| 01 | Recyclable and Low Fat Products |    Easy    |    ✅   |    —   | Filtering · `WHERE`          |
-| 02 | Find Customer Referee           |    Easy    |    ✅   |    —   | `NULL` Handling · Filtering  |
-| 03 | Big Countries                   |    Easy    |    ✅   |    —   | Conditional Filtering · `OR` |
-| 04 | Article Views I                 |    Easy    |    ✅   |    —   | `DISTINCT` · Self Comparison |
-| 05 | Invalid Tweets                  |    Easy    |    ✅   |    —   | String Length · Filtering    |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 01 | Recyclable and Low Fat Products | Easy | ✅ | — | Filtering · `WHERE` |
+| 02 | Find Customer Referee | Easy | ✅ | — | `NULL` Handling · Filtering |
+| 03 | Big Countries | Easy | ✅ | — | Conditional Filtering · `OR` |
+| 04 | Article Views I | Easy | ✅ | — | `DISTINCT` · Self Comparison |
+| 05 | Invalid Tweets | Easy | ✅ | — | String Length · Filtering |
 
 **Select: 5 / 5 Complete ✅**
 
@@ -86,17 +86,17 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 2️⃣ Basic Joins
 
-|  # | Problem                                                | Difficulty | Status | Review | Pattern                                    |
-| -: | ------------------------------------------------------ | :--------: | :----: | :----: | ------------------------------------------ |
-| 06 | Replace Employee ID With The Unique Identifier         |    Easy    |    ✅   |    —   | `LEFT JOIN`                                |
-| 07 | Product Sales Analysis I                               |    Easy    |    ✅   |    —   | `INNER JOIN`                               |
-| 08 | Customer Who Visited but Did Not Make Any Transactions |    Easy    |    ✅   |    —   | Anti-Join · `LEFT JOIN`                    |
-| 09 | Rising Temperature                                     |    Easy    |    ✅   |   🔁   | `LAG()` · Date Comparison                  |
-| 10 | Average Time of Process per Machine                    |    Easy    |    ✅   |   🔁   | Self Join · `AVG()` · Aggregation          |
-| 11 | Employee Bonus                                         |    Easy    |    ✅   |    —   | `LEFT JOIN` · `NULL` Handling              |
-| 12 | Students and Examinations                              |    Easy    |    ✅   |   🔁   | `CROSS JOIN` · `LEFT JOIN` · `COUNT()`     |
-| 13 | Managers with at Least 5 Direct Reports                |   Medium   |    ✅   |   🔁   | `GROUP BY` · `HAVING` · Subquery           |
-| 14 | Confirmation Rate                                      |   Medium   |    ✅   |   🔁   | Conditional Aggregation · `AVG()` · `CASE` |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 06 | Replace Employee ID With The Unique Identifier | Easy | ✅ | — | `LEFT JOIN` |
+| 07 | Product Sales Analysis I | Easy | ✅ | — | `INNER JOIN` |
+| 08 | Customer Who Visited but Did Not Make Any Transactions | Easy | ✅ | — | Anti-Join · `LEFT JOIN` |
+| 09 | Rising Temperature | Easy | ✅ | 🔁 | `LAG()` · Date Comparison |
+| 10 | Average Time of Process per Machine | Easy | ✅ | 🔁 | Self Join · `AVG()` · Aggregation |
+| 11 | Employee Bonus | Easy | ✅ | — | `LEFT JOIN` · `NULL` Handling |
+| 12 | Students and Examinations | Easy | ✅ | 🔁 | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
+| 13 | Managers with at Least 5 Direct Reports | Medium | ✅ | 🔁 | `GROUP BY` · `HAVING` · Subquery |
+| 14 | Confirmation Rate | Medium | ✅ | 🔁 | Conditional Aggregation · `AVG()` · `CASE` |
 
 **Basic Joins: 9 / 9 Complete ✅**
 
@@ -104,74 +104,74 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 ### 3️⃣ Basic Aggregate Functions
 
-|  # | Problem                                | Difficulty | Status | Review | Pattern                                          |
-| -: | -------------------------------------- | :--------: | :----: | :----: | ------------------------------------------------ |
-| 15 | Not Boring Movies                      |    Easy    |    ✅   |    —   | Filtering · Modulo · `ORDER BY`                  |
-| 16 | Average Selling Price                  |    Easy    |    ✅   |   🔁   | Weighted Average · Date-Range Join · Aggregation |
-| 17 | Project Employees I                    |    Easy    |    ✅   |    —   | `AVG()` · `GROUP BY`                             |
-| 18 | Percentage of Users Attended a Contest |    Easy    |    ✅   |   🔁   | Percentage · Aggregation · Scalar Subquery       |
-| 19 | Queries Quality and Percentage         |    Easy    |    ⬜   |    —   | —                                                |
-| 20 | Monthly Transactions I                 |   Medium   |    ⬜   |    —   | —                                                |
-| 21 | Immediate Food Delivery II             |   Medium   |    ⬜   |    —   | —                                                |
-| 22 | Game Play Analysis IV                  |   Medium   |    ⬜   |    —   | —                                                |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 15 | Not Boring Movies | Easy | ✅ | — | Filtering · Modulo · `ORDER BY` |
+| 16 | Average Selling Price | Easy | ✅ | 🔁 | Weighted Average · Date-Range Join · Aggregation |
+| 17 | Project Employees I | Easy | ✅ | — | `AVG()` · `GROUP BY` |
+| 18 | Percentage of Users Attended a Contest | Easy | ✅ | 🔁 | Percentage · Aggregation · Scalar Subquery |
+| 19 | Queries Quality and Percentage | Easy | ✅ | 🔁 | Conditional Aggregation · `AVG()` · `CASE` · Percentage |
+| 20 | Monthly Transactions I | Medium | ⬜ | — | — |
+| 21 | Immediate Food Delivery II | Medium | ⬜ | — | — |
+| 22 | Game Play Analysis IV | Medium | ⬜ | — | — |
 
-**Basic Aggregate Functions: 4 / 8**
+**Basic Aggregate Functions: 5 / 8**
 
 ---
 
 ### 4️⃣ Sorting and Grouping
 
-|  # | Problem                                          | Difficulty | Status | Review | Pattern |
-| -: | ------------------------------------------------ | :--------: | :----: | :----: | ------- |
-| 23 | Number of Unique Subjects Taught by Each Teacher |    Easy    |    ⬜   |    —   | —       |
-| 24 | User Activity for the Past 30 Days I             |    Easy    |    ⬜   |    —   | —       |
-| 25 | Product Sales Analysis III                       |   Medium   |    ⬜   |    —   | —       |
-| 26 | Classes With at Least 5 Students                 |    Easy    |    ⬜   |    —   | —       |
-| 27 | Find Followers Count                             |    Easy    |    ⬜   |    —   | —       |
-| 28 | Biggest Single Number                            |    Easy    |    ⬜   |    —   | —       |
-| 29 | Customers Who Bought All Products                |   Medium   |    ⬜   |    —   | —       |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 23 | Number of Unique Subjects Taught by Each Teacher | Easy | ⬜ | — | — |
+| 24 | User Activity for the Past 30 Days I | Easy | ⬜ | — | — |
+| 25 | Product Sales Analysis III | Medium | ⬜ | — | — |
+| 26 | Classes With at Least 5 Students | Easy | ⬜ | — | — |
+| 27 | Find Followers Count | Easy | ⬜ | — | — |
+| 28 | Biggest Single Number | Easy | ⬜ | — | — |
+| 29 | Customers Who Bought All Products | Medium | ⬜ | — | — |
 
 ---
 
 ### 5️⃣ Advanced Select and Joins
 
-|  # | Problem                                               | Difficulty | Status | Review | Pattern |
-| -: | ----------------------------------------------------- | :--------: | :----: | :----: | ------- |
-| 30 | The Number of Employees Which Report to Each Employee |    Easy    |    ⬜   |    —   | —       |
-| 31 | Primary Department for Each Employee                  |    Easy    |    ⬜   |    —   | —       |
-| 32 | Triangle Judgement                                    |    Easy    |    ⬜   |    —   | —       |
-| 33 | Consecutive Numbers                                   |   Medium   |    ⬜   |    —   | —       |
-| 34 | Product Price at a Given Date                         |   Medium   |    ⬜   |    —   | —       |
-| 35 | Last Person to Fit in the Bus                         |   Medium   |    ⬜   |    —   | —       |
-| 36 | Count Salary Categories                               |   Medium   |    ⬜   |    —   | —       |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 30 | The Number of Employees Which Report to Each Employee | Easy | ⬜ | — | — |
+| 31 | Primary Department for Each Employee | Easy | ⬜ | — | — |
+| 32 | Triangle Judgement | Easy | ⬜ | — | — |
+| 33 | Consecutive Numbers | Medium | ⬜ | — | — |
+| 34 | Product Price at a Given Date | Medium | ⬜ | — | — |
+| 35 | Last Person to Fit in the Bus | Medium | ⬜ | — | — |
+| 36 | Count Salary Categories | Medium | ⬜ | — | — |
 
 ---
 
 ### 6️⃣ Subqueries
 
-|  # | Problem                                      | Difficulty | Status | Review | Pattern |
-| -: | -------------------------------------------- | :--------: | :----: | :----: | ------- |
-| 37 | Employees Whose Manager Left the Company     |    Easy    |    ⬜   |    —   | —       |
-| 38 | Exchange Seats                               |   Medium   |    ⬜   |    —   | —       |
-| 39 | Movie Rating                                 |   Medium   |    ⬜   |    —   | —       |
-| 40 | Restaurant Growth                            |   Medium   |    ⬜   |    —   | —       |
-| 41 | Friend Requests II: Who Has the Most Friends |   Medium   |    ⬜   |    —   | —       |
-| 42 | Investments in 2016                          |   Medium   |    ⬜   |    —   | —       |
-| 43 | Department Top Three Salaries                |    Hard    |    ⬜   |    —   | —       |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 37 | Employees Whose Manager Left the Company | Easy | ⬜ | — | — |
+| 38 | Exchange Seats | Medium | ⬜ | — | — |
+| 39 | Movie Rating | Medium | ⬜ | — | — |
+| 40 | Restaurant Growth | Medium | ⬜ | — | — |
+| 41 | Friend Requests II: Who Has the Most Friends | Medium | ⬜ | — | — |
+| 42 | Investments in 2016 | Medium | ⬜ | — | — |
+| 43 | Department Top Three Salaries | Hard | ⬜ | — | — |
 
 ---
 
 ### 7️⃣ Advanced String Functions / Regex / Clause
 
-|  # | Problem                               | Difficulty | Status | Review | Pattern |
-| -: | ------------------------------------- | :--------: | :----: | :----: | ------- |
-| 44 | Fix Names in a Table                  |    Easy    |    ⬜   |    —   | —       |
-| 45 | Patients With a Condition             |    Easy    |    ⬜   |    —   | —       |
-| 46 | Delete Duplicate Emails               |    Easy    |    ⬜   |    —   | —       |
-| 47 | Second Highest Salary                 |   Medium   |    ⬜   |    —   | —       |
-| 48 | Group Sold Products By The Date       |    Easy    |    ⬜   |    —   | —       |
-| 49 | List the Products Ordered in a Period |    Easy    |    ⬜   |    —   | —       |
-| 50 | Find Users With Valid E-Mails         |    Easy    |    ⬜   |    —   | —       |
+| # | Problem | Difficulty | Status | Review | Pattern |
+| -: | --- | :---: | :---: | :---: | --- |
+| 44 | Fix Names in a Table | Easy | ⬜ | — | — |
+| 45 | Patients With a Condition | Easy | ⬜ | — | — |
+| 46 | Delete Duplicate Emails | Easy | ⬜ | — | — |
+| 47 | Second Highest Salary | Medium | ⬜ | — | — |
+| 48 | Group Sold Products By The Date | Easy | ⬜ | — | — |
+| 49 | List the Products Ordered in a Period | Easy | ⬜ | — | — |
+| 50 | Find Users With Valid E-Mails | Easy | ⬜ | — | — |
 
 ---
 
@@ -207,6 +207,7 @@ leetcode-sql-50/
 │   ├── 16-average-selling-price.sql
 │   ├── 17-project-employees-i.sql
 │   ├── 18-percentage-of-users-attended-a-contest.sql
+│   ├── 19-queries-quality-and-percentage.sql
 │   └── ...
 │
 ├── 04-sorting-and-grouping/
@@ -294,27 +295,28 @@ docs: update review tracker
 ## 🏁 Challenge Progress
 
 ```text
-[███████░░░░░░░░░░░░░] 18 / 50
+[████████░░░░░░░░░░░░] 19 / 50
 ```
 
-|                        | Problems |
-| ---------------------- | -------: |
-| ✅ Completed            |   **18** |
-| ⏳ Remaining            |   **32** |
-| 🔁 Selected for Review |    **7** |
-| 🎯 Target              |   **50** |
+| | Problems |
+| --- | ---: |
+| ✅ Completed | **19** |
+| ⏳ Remaining | **31** |
+| 🔁 Selected for Review | **8** |
+| 🎯 Target | **50** |
 
 ### 🔁 Current Review Queue
 
-|  # | Problem                                 | Pattern to Reinforce                             |
-| -: | --------------------------------------- | ------------------------------------------------ |
-| 09 | Rising Temperature                      | `LAG()` · Date Comparison                        |
-| 10 | Average Time of Process per Machine     | Self Join · `AVG()` · Aggregation                |
-| 12 | Students and Examinations               | `CROSS JOIN` · `LEFT JOIN` · `COUNT()`           |
-| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery                 |
-| 14 | Confirmation Rate                       | Conditional Aggregation · `AVG()` · `CASE`       |
-| 16 | Average Selling Price                   | Weighted Average · Date-Range Join · Aggregation |
-| 18 | Percentage of Users Attended a Contest  | Percentage · Aggregation · Scalar Subquery       |
+| # | Problem | Pattern to Reinforce |
+| -: | --- | --- |
+| 09 | Rising Temperature | `LAG()` · Date Comparison |
+| 10 | Average Time of Process per Machine | Self Join · `AVG()` · Aggregation |
+| 12 | Students and Examinations | `CROSS JOIN` · `LEFT JOIN` · `COUNT()` |
+| 13 | Managers with at Least 5 Direct Reports | `GROUP BY` · `HAVING` · Subquery |
+| 14 | Confirmation Rate | Conditional Aggregation · `AVG()` · `CASE` |
+| 16 | Average Selling Price | Weighted Average · Date-Range Join · Aggregation |
+| 18 | Percentage of Users Attended a Contest | Percentage · Aggregation · Scalar Subquery |
+| 19 | Queries Quality and Percentage | Conditional Aggregation · `AVG()` · `CASE` · Percentage |
 
 ---
 
@@ -335,11 +337,11 @@ The goal is to reach the point where the process becomes natural:
 ## 🚀 Final Goal
 
 ```text
-Current   18 / 50  ███████░░░░░░░░░░░░░  36%
+Current   19 / 50  ████████░░░░░░░░░░░░  38%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**18 down. 32 to go.**
+**19 down. 31 to go.**
 
 ---
 
