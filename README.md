@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**19 / 50 Problems Completed — 38%**
+**20 / 50 Problems Completed — 40%**
 
-```text
-████████░░░░░░░░░░░░ 38%
+```text id="ng9wzf"
+████████░░░░░░░░░░░░ 40%
 ```
 
 **Status:** 🚧 In Progress
@@ -32,6 +32,7 @@ I'm using this challenge to become faster and more confident at:
 - Writing readable and maintainable queries
 - Explaining SQL solutions clearly in an interview
 - Revisiting important patterns through spaced repetition
+- Recording new SQL concepts I discover along the way
 
 ---
 
@@ -39,7 +40,7 @@ I'm using this challenge to become faster and more confident at:
 
 The SQL 50 study plan progresses through:
 
-```text
+```text id="8o8q1j"
 SELECT
    ↓
 Basic Joins
@@ -59,12 +60,70 @@ Advanced String Functions / Regex / Clause
 
 ## 🔁 Review System
 
-Selected problems are marked for periodic review to reinforce important SQL patterns and alternative approaches.
+Selected problems are marked for periodic review to reinforce important SQL patterns, alternative approaches, and newly discovered concepts.
 
 | Marker | Meaning |
 | :---: | --- |
 | 🔁 | Selected for review |
 | — | — |
+
+---
+
+## 💡 Learning Notes
+
+This section records SQL concepts that were new to me or worth remembering for future problems.
+
+### `DISTINCT` Inside Aggregate Functions
+
+While solving **#23 Number of Unique Subjects Taught by Each Teacher**, I learned that `DISTINCT` can be used inside aggregate functions such as:
+
+```sql id="af2xd7"
+COUNT(DISTINCT column_name)
+SUM(DISTINCT column_name)
+AVG(DISTINCT column_name)
+```
+
+For example:
+
+```sql id="a5k9y7"
+COUNT(DISTINCT subject_id)
+```
+
+counts only the **unique** `subject_id` values within each group.
+
+If the values are:
+
+```text id="w85j4o"
+1, 1, 2, 2, 3
+```
+
+then:
+
+```sql id="1h1g73"
+COUNT(subject_id)
+```
+
+returns:
+
+```text id="ab1pc6"
+5
+```
+
+while:
+
+```sql id="f3gb1q"
+COUNT(DISTINCT subject_id)
+```
+
+returns:
+
+```text id="a8ztj3"
+3
+```
+
+This is useful when duplicate values exist but the calculation should only consider unique values.
+
+> **Key takeaway:** `DISTINCT` isn't limited to `SELECT DISTINCT`. It can also be used inside supported aggregate functions when the aggregation should operate on unique values.
 
 ---
 
@@ -123,13 +182,15 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 | # | Problem | Difficulty | Status | Review | Pattern |
 | -: | --- | :---: | :---: | :---: | --- |
-| 23 | Number of Unique Subjects Taught by Each Teacher | Easy | ⬜ | — | — |
+| 23 | Number of Unique Subjects Taught by Each Teacher | Easy | ✅ | 🔁 | `GROUP BY` · `COUNT(DISTINCT ...)` |
 | 24 | User Activity for the Past 30 Days I | Easy | ⬜ | — | — |
 | 25 | Product Sales Analysis III | Medium | ⬜ | — | — |
 | 26 | Classes With at Least 5 Students | Easy | ⬜ | — | — |
 | 27 | Find Followers Count | Easy | ⬜ | — | — |
 | 28 | Biggest Single Number | Easy | ⬜ | — | — |
 | 29 | Customers Who Bought All Products | Medium | ⬜ | — | — |
+
+**Sorting and Grouping: 1 / 7**
 
 ---
 
@@ -179,7 +240,7 @@ Selected problems are marked for periodic review to reinforce important SQL patt
 
 Each problem is stored as an individual SQL solution and organized by topic.
 
-```text
+```text id="glwpy7"
 leetcode-sql-50/
 │
 ├── README.md
@@ -207,10 +268,12 @@ leetcode-sql-50/
 │   ├── 16-average-selling-price.sql
 │   ├── 17-project-employees-i.sql
 │   ├── 18-percentage-of-users-attended-a-contest.sql
-│   ├── 19-queries-quality-and-percentage.sql
-│   └── ...
+│   └── 19-queries-quality-and-percentage.sql
 │
 ├── 04-sorting-and-grouping/
+│   ├── 23-number-of-unique-subjects-taught-by-each-teacher.sql
+│   └── ...
+│
 ├── 05-advanced-select-and-joins/
 ├── 06-subqueries/
 └── 07-advanced-string-functions/
@@ -226,7 +289,7 @@ I aim to keep every solution:
 
 Example:
 
-```sql
+```sql id="skj6sn"
 /*
  * LeetCode SQL 50
  * 01. Recyclable and Low Fat Products
@@ -259,7 +322,8 @@ For each problem, I work through the following process:
 5. **Check edge cases** — Duplicates, `NULL` values, ties, and missing relationships.
 6. **Review readability** — Could another person understand the query quickly?
 7. **Explain it** — Could I walk an interviewer through why the solution works?
-8. **Revisit key patterns** — Mark selected problems for future review and alternative solutions.
+8. **Record new concepts** — Capture SQL syntax or patterns I discover.
+9. **Revisit key patterns** — Mark selected problems for future review and alternative solutions.
 
 > A correct query matters. Understanding **why** it is correct matters more.
 
@@ -269,7 +333,7 @@ For each problem, I work through the following process:
 
 Each problem gets its own commit so the Git history also serves as a record of my progress.
 
-```text
+```text id="k5r1d1"
 leetcode: solve 01 Recyclable and Low Fat Products
 leetcode: solve 02 Find Customer Referee
 leetcode: solve 03 Big Countries
@@ -277,32 +341,33 @@ leetcode: solve 03 Big Countries
 
 When revisiting an existing solution:
 
-```text
+```text id="2ksqu5"
 refactor: revisit 09 Rising Temperature
 refactor: add alternative approach for 12 Students and Examinations
 ```
 
 For documentation changes:
 
-```text
+```text id="mm3v8e"
 docs: add SQL 50 roadmap
 docs: update challenge progress
 docs: update review tracker
+docs: add SQL learning notes
 ```
 
 ---
 
 ## 🏁 Challenge Progress
 
-```text
-[████████░░░░░░░░░░░░] 19 / 50
+```text id="43vsbt"
+[████████░░░░░░░░░░░░] 20 / 50
 ```
 
 | | Problems |
 | --- | ---: |
-| ✅ Completed | **19** |
-| ⏳ Remaining | **31** |
-| 🔁 Selected for Review | **8** |
+| ✅ Completed | **20** |
+| ⏳ Remaining | **30** |
+| 🔁 Selected for Review | **9** |
 | 🎯 Target | **50** |
 
 ### 🔁 Current Review Queue
@@ -317,6 +382,7 @@ docs: update review tracker
 | 16 | Average Selling Price | Weighted Average · Date-Range Join · Aggregation |
 | 18 | Percentage of Users Attended a Contest | Percentage · Aggregation · Scalar Subquery |
 | 19 | Queries Quality and Percentage | Conditional Aggregation · `AVG()` · `CASE` · Percentage |
+| 23 | Number of Unique Subjects Taught by Each Teacher | `COUNT(DISTINCT ...)` · `GROUP BY` |
 
 ---
 
@@ -326,7 +392,7 @@ SQL interview questions often reuse a core set of concepts in increasingly compl
 
 Working through all 50 problems builds pattern recognition across joins, aggregations, grouping, subqueries, filtering, string manipulation, and relational reasoning.
 
-Selected problems are revisited over time to reinforce useful patterns and explore alternative approaches.
+Selected problems are revisited over time to reinforce useful patterns, newly discovered concepts, and alternative approaches.
 
 The goal is to reach the point where the process becomes natural:
 
@@ -336,12 +402,12 @@ The goal is to reach the point where the process becomes natural:
 
 ## 🚀 Final Goal
 
-```text
-Current   19 / 50  ████████░░░░░░░░░░░░  38%
+```text id="hxbvx5"
+Current   20 / 50  ████████░░░░░░░░░░░░  40%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**19 down. 31 to go.**
+**20 down. 30 to go.**
 
 ---
 
