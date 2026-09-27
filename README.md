@@ -8,10 +8,10 @@ A collection of my solutions to the **LeetCode SQL 50 Study Plan**, documenting 
 
 ## 📊 Progress
 
-**20 / 50 Problems Completed — 40%**
+**21 / 50 Problems Completed — 42%**
 
-```text id="ng9wzf"
-████████░░░░░░░░░░░░ 40%
+```text
+████████░░░░░░░░░░░░ 42%
 ```
 
 **Status:** 🚧 In Progress
@@ -40,7 +40,7 @@ I'm using this challenge to become faster and more confident at:
 
 The SQL 50 study plan progresses through:
 
-```text id="8o8q1j"
+```text
 SELECT
    ↓
 Basic Joins
@@ -75,9 +75,9 @@ This section records SQL concepts that were new to me or worth remembering for f
 
 ### `DISTINCT` Inside Aggregate Functions
 
-While solving **#23 Number of Unique Subjects Taught by Each Teacher**, I learned that `DISTINCT` can be used inside aggregate functions such as:
+While solving **#23 Number of Unique Subjects Taught by Each Teacher**, I learned that `DISTINCT` can be used inside supported aggregate functions such as:
 
-```sql id="af2xd7"
+```sql
 COUNT(DISTINCT column_name)
 SUM(DISTINCT column_name)
 AVG(DISTINCT column_name)
@@ -85,7 +85,7 @@ AVG(DISTINCT column_name)
 
 For example:
 
-```sql id="a5k9y7"
+```sql
 COUNT(DISTINCT subject_id)
 ```
 
@@ -93,37 +93,69 @@ counts only the **unique** `subject_id` values within each group.
 
 If the values are:
 
-```text id="w85j4o"
+```text
 1, 1, 2, 2, 3
 ```
 
 then:
 
-```sql id="1h1g73"
+```sql
 COUNT(subject_id)
 ```
 
 returns:
 
-```text id="ab1pc6"
+```text
 5
 ```
 
 while:
 
-```sql id="f3gb1q"
+```sql
 COUNT(DISTINCT subject_id)
 ```
 
 returns:
 
-```text id="a8ztj3"
+```text
 3
 ```
 
-This is useful when duplicate values exist but the calculation should only consider unique values.
-
 > **Key takeaway:** `DISTINCT` isn't limited to `SELECT DISTINCT`. It can also be used inside supported aggregate functions when the aggregation should operate on unique values.
+
+---
+
+### Aggregate First, Then Join Back
+
+While solving **#30 The Number of Employees Which Report to Each Employee**, I used a useful multi-step SQL pattern:
+
+```text
+Detail rows
+    ↓
+GROUP BY foreign key
+    ↓
+Calculate aggregates
+    ↓
+Join aggregated results back
+    ↓
+Retrieve descriptive columns
+```
+
+For this problem, employees are first grouped by `reports_to` to calculate:
+
+```sql
+COUNT(*) AS reports_count
+```
+
+and:
+
+```sql
+ROUND(AVG(age * 1.0), 0) AS average_age
+```
+
+The aggregated result is then joined back to `Employees` so the manager's `name` can be returned.
+
+> **Key takeaway:** When the information needed in the final result exists at two different levels—aggregated data and individual entity data—it can be useful to aggregate first and then join the result back to the original table.
 
 ---
 
@@ -198,13 +230,15 @@ This is useful when duplicate values exist but the calculation should only consi
 
 | # | Problem | Difficulty | Status | Review | Pattern |
 | -: | --- | :---: | :---: | :---: | --- |
-| 30 | The Number of Employees Which Report to Each Employee | Easy | ⬜ | — | — |
+| 30 | The Number of Employees Which Report to Each Employee | Easy | ✅ | 🔁 | `GROUP BY` · Aggregation · Derived Table · Join Back |
 | 31 | Primary Department for Each Employee | Easy | ⬜ | — | — |
 | 32 | Triangle Judgement | Easy | ⬜ | — | — |
 | 33 | Consecutive Numbers | Medium | ⬜ | — | — |
 | 34 | Product Price at a Given Date | Medium | ⬜ | — | — |
 | 35 | Last Person to Fit in the Bus | Medium | ⬜ | — | — |
 | 36 | Count Salary Categories | Medium | ⬜ | — | — |
+
+**Advanced Select and Joins: 1 / 7**
 
 ---
 
@@ -240,7 +274,7 @@ This is useful when duplicate values exist but the calculation should only consi
 
 Each problem is stored as an individual SQL solution and organized by topic.
 
-```text id="glwpy7"
+```text
 leetcode-sql-50/
 │
 ├── README.md
@@ -275,6 +309,9 @@ leetcode-sql-50/
 │   └── ...
 │
 ├── 05-advanced-select-and-joins/
+│   ├── 30-the-number-of-employees-which-report-to-each-employee.sql
+│   └── ...
+│
 ├── 06-subqueries/
 └── 07-advanced-string-functions/
 ```
@@ -289,7 +326,7 @@ I aim to keep every solution:
 
 Example:
 
-```sql id="skj6sn"
+```sql
 /*
  * LeetCode SQL 50
  * 01. Recyclable and Low Fat Products
@@ -333,7 +370,7 @@ For each problem, I work through the following process:
 
 Each problem gets its own commit so the Git history also serves as a record of my progress.
 
-```text id="k5r1d1"
+```text
 leetcode: solve 01 Recyclable and Low Fat Products
 leetcode: solve 02 Find Customer Referee
 leetcode: solve 03 Big Countries
@@ -341,14 +378,14 @@ leetcode: solve 03 Big Countries
 
 When revisiting an existing solution:
 
-```text id="2ksqu5"
+```text
 refactor: revisit 09 Rising Temperature
 refactor: add alternative approach for 12 Students and Examinations
 ```
 
 For documentation changes:
 
-```text id="mm3v8e"
+```text
 docs: add SQL 50 roadmap
 docs: update challenge progress
 docs: update review tracker
@@ -359,15 +396,15 @@ docs: add SQL learning notes
 
 ## 🏁 Challenge Progress
 
-```text id="43vsbt"
-[████████░░░░░░░░░░░░] 20 / 50
+```text
+[████████░░░░░░░░░░░░] 21 / 50
 ```
 
 | | Problems |
 | --- | ---: |
-| ✅ Completed | **20** |
-| ⏳ Remaining | **30** |
-| 🔁 Selected for Review | **9** |
+| ✅ Completed | **21** |
+| ⏳ Remaining | **29** |
+| 🔁 Selected for Review | **10** |
 | 🎯 Target | **50** |
 
 ### 🔁 Current Review Queue
@@ -383,6 +420,7 @@ docs: add SQL learning notes
 | 18 | Percentage of Users Attended a Contest | Percentage · Aggregation · Scalar Subquery |
 | 19 | Queries Quality and Percentage | Conditional Aggregation · `AVG()` · `CASE` · Percentage |
 | 23 | Number of Unique Subjects Taught by Each Teacher | `COUNT(DISTINCT ...)` · `GROUP BY` |
+| 30 | The Number of Employees Which Report to Each Employee | Aggregate · Derived Table · Join Back |
 
 ---
 
@@ -402,12 +440,12 @@ The goal is to reach the point where the process becomes natural:
 
 ## 🚀 Final Goal
 
-```text id="hxbvx5"
-Current   20 / 50  ████████░░░░░░░░░░░░  40%
+```text
+Current   21 / 50  ████████░░░░░░░░░░░░  42%
 Target    50 / 50  ████████████████████  100%
 ```
 
-**20 down. 30 to go.**
+**21 down. 29 to go.**
 
 ---
 
